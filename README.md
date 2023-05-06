@@ -10,3 +10,8 @@ Use the following command to setup the environment:
 To dump all the new changes in env file:
 
 `$ conda env export --no-builds > environment.yaml`
+
+## Readings
+Could be useful stuff:
+- Intro Blog for Vision-Language Models: https://huggingface.co/blog/vision_language_pretraining
+- Survey paper on Vision-Language Models: https://arxiv.org/abs/2210.09263
