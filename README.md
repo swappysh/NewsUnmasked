@@ -15,3 +15,6 @@ To dump all the new changes in env file:
 Could be useful stuff:
 - Intro Blog for Vision-Language Models: https://huggingface.co/blog/vision_language_pretraining
 - Survey paper on Vision-Language Models: https://arxiv.org/abs/2210.09263
+
+## Git Commits
+Jupyter Notebook output getting cleaned as per: https://medium.com/somosfit/version-control-on-jupyter-notebooks-6b67a0cf12a3
