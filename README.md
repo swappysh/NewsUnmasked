@@ -9,7 +9,7 @@ Use the following command to setup the environment:
 
 To dump all the new changes in env file:
 
-`$ conda env export --no-builds > environment.yaml`
+`$ conda env export --no-builds --from-history > environment.yaml`
 
 ## Data
 
