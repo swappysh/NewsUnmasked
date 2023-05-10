@@ -89,11 +89,26 @@ rouge1 scores for initial 100 samples from validation set:
 
 Test Set cosine score on leaderboard: 20.2987
 
+### One Word Section + Descriptive Section
+Tried adding one word section as prefix to the caption and in another experiment tried adding the descriptive section as prefix to the caption. The results were not conclusive. The performance changes based on what was masked.
+
+| Image | Observation |
+| --- | --- |
+| ![desc prompt 0](./images/desc_prompt_0.png) | unmasked == prompted > sample_prompted == desc_sample_prompted |
+| ![desc prompt 1](./images/desc_prompt_1.png) | sample_prompted == desc_sample_prompted > unmasked == prompted |
+
 ## Readings
 Could be useful stuff:
 - Intro Blog for Vision-Language Models: https://huggingface.co/blog/vision_language_pretraining
 - Survey paper on Vision-Language Models: https://arxiv.org/abs/2210.09263
 - Another survey paper on Vision-Language Models: https://www.semanticscholar.org/reader/04248a087a834af24bfe001c9fc9ea28dab63c26
+
+## Possible Directions
+- A lot of images have a celebrity, identifying the celebrity might help in predicting the masked word.
+    - Q: Do they mask only adjectives or proper nouns as well?
+- Video-Language Multi-Modal Models
+- Pre-Train Image Caption to generate headlines
+- Use section somehow in generating the headlines
 
 ## Git Commits
 Jupyter Notebook output getting cleaned as per: https://medium.com/somosfit/version-control-on-jupyter-notebooks-6b67a0cf12a3
