@@ -95,3 +95,6 @@ Could be useful stuff:
 
 ## Git Commits
 Jupyter Notebook output getting cleaned as per: https://medium.com/somosfit/version-control-on-jupyter-notebooks-6b67a0cf12a3
+
+## Notebook link
+https://colab.research.google.com/drive/1jFHRYrEsIodEef17plDFxjN-pAlYZOdJ?usp=sharing
