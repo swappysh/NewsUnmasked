@@ -87,6 +87,8 @@ rouge1 scores for initial 100 samples from validation set:
 
 7% of inital 100 samples from validation set showed improvement in rouge1 score with prompted approach. In this approach we are using image caption as the context and the headline as the masked text.
 
+Test Set cosine score on leaderboard: 20.2987
+
 ## Readings
 Could be useful stuff:
 - Intro Blog for Vision-Language Models: https://huggingface.co/blog/vision_language_pretraining
