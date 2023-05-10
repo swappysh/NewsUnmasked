@@ -70,6 +70,7 @@ Image sizes are varying. The images are varying from approx 600x249 to 1050x549 
 - Use image captioning to generate a caption for the image.
 - Use the caption as the context and the headline as the masked text.
 - Use a mask filling model to predict the masked word.
+
 Sample examples using `BLIP-large (caption) + distilroberta-base (mask filling)` pipeline:
 
 | Image | Improved |
