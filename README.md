@@ -5,11 +5,11 @@ Huggingface challenge --> https://huggingface.co/spaces/competitions/news-unmask
 
 Use the following command to setup the environment:
 
-`$ conda env create --file environment.yaml`
+`$ conda env create --file environment_{cpu/gpu}.yaml`
 
 To dump all the new changes in env file:
 
-`$ conda env export --no-builds --from-history > environment.yaml`
+`$ conda env export --no-builds --from-history > environment_{cpu/gpu}.yaml`
 
 ## Data
 
