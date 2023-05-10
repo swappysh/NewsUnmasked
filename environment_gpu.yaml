@@ -1,0 +1,16 @@
+name: news-unmasked-gpu
+channels:
+  - defaults
+dependencies:
+  - pytorch-cuda=11.8
+  - pytorch
+  - torchaudio
+  - torchvision
+  - ipykernel
+  - datasets
+  - matplotlib
+  - transformers
+  - torchmetrics
+  - nltk
+  - nbconvert
+prefix: /home/ss14412/.conda/envs/news-unmasked-gpu

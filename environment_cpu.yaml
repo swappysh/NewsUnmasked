@@ -1,0 +1,12 @@
+name: news-unmasked
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - ipykernel
+  - pillow
+  - pytorch::pytorch
+  - torchvision
+  - torchaudio
+  - jupyter_contrib_nbextensions
+prefix: /Users/swapnilsharma/miniforge3/envs/news-unmasked
