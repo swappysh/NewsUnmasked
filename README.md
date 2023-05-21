@@ -97,6 +97,10 @@ Tried adding one word section as prefix to the caption and in another experiment
 | ![desc prompt 0](./images/desc_prompt_0.png) | unmasked == prompted > sample_prompted == desc_sample_prompted |
 | ![desc prompt 1](./images/desc_prompt_1.png) | sample_prompted == desc_sample_prompted > unmasked == prompted |
 
+## Masked training Dataset
+I have masked and created the training dataset for consistency
+Download from https://drive.google.com/file/d/1sE2kae6-Uj7B0ThIX8bTfKdCqq9aKp4n/view?usp=sharing
+
 ## Readings
 Could be useful stuff:
 - Intro Blog for Vision-Language Models: https://huggingface.co/blog/vision_language_pretraining
