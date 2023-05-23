@@ -2,3 +2,4 @@ processed_data/
 processed_data.zip
 sample_result.csv
 .DS_STORE
+best_model.pt

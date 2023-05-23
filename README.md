@@ -101,7 +101,17 @@ Tried adding one word section as prefix to the caption and in another experiment
 ### BLIP-large
 Passing the image and masked headline as the context to the model. Some limitations, using BLIPForConditionalGeneration, which is trained to complete a prompt and not MLM.
 
-Accuracy on validation set: 13.13%
+Baseline cosine similarity accuracy on validation set: 13.13%
+
+Tried training on the masked dataset for a single epoch. Even tried training on a smaller dataset (100 samples). The model seems to learn but the performance is not good. Reason seems to be mis alignment in pretraining objective and the current training dataset.
+
+#### BLIP VQA
+On Abhishek's advice trying VQA with a prompt:
+`Fill the [MASK] label in the following news headline from section {section} : {masked_headline}`
+
+Baseline cosine similarity accuracy on validation set: 0.15%
+
+Tried training on a smaller set (100 samples). The model performance seems to go down and never recover.
 
 ## Masked training Dataset
 I have masked and created the training dataset for consistency
