@@ -88,6 +88,7 @@ rouge1 scores for initial 100 samples from validation set:
 7% of inital 100 samples from validation set showed improvement in rouge1 score with prompted approach. In this approach we are using image caption as the context and the headline as the masked text.
 
 Test Set cosine score on leaderboard: 20.2987
+Accuracy on validation set: 28.20%
 
 ### One Word Section + Descriptive Section
 Tried adding one word section as prefix to the caption and in another experiment tried adding the descriptive section as prefix to the caption. The results were not conclusive. The performance changes based on what was masked.
@@ -97,9 +98,15 @@ Tried adding one word section as prefix to the caption and in another experiment
 | ![desc prompt 0](./images/desc_prompt_0.png) | unmasked == prompted > sample_prompted == desc_sample_prompted |
 | ![desc prompt 1](./images/desc_prompt_1.png) | sample_prompted == desc_sample_prompted > unmasked == prompted |
 
+### BLIP-large
+Passing the image and masked headline as the context to the model. Some limitations, using BLIPForConditionalGeneration, which is trained to complete a prompt and not MLM.
+
+Accuracy on validation set: 13.13%
+
 ## Masked training Dataset
 I have masked and created the training dataset for consistency
-Download from https://drive.google.com/file/d/1sE2kae6-Uj7B0ThIX8bTfKdCqq9aKp4n/view?usp=sharing
+Download using command:
+`!gdown https://drive.google.com/uc?id=1OUj56f7gX7_C-xQE6YkVBpJICVNcDsNl`
 
 ## Readings
 Could be useful stuff:
