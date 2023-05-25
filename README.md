@@ -99,11 +99,16 @@ Tried adding one word section as prefix to the caption and in another experiment
 | ![desc prompt 1](./images/desc_prompt_1.png) | sample_prompted == desc_sample_prompted > unmasked == prompted |
 
 ### BLIP-large
+#### BLIP Conditional Generation
 Passing the image and masked headline as the context to the model. Some limitations, using BLIPForConditionalGeneration, which is trained to complete a prompt and not MLM.
 
 Baseline cosine similarity accuracy on validation set: 13.13%
 
-Tried training on the masked dataset for a single epoch. Even tried training on a smaller dataset (100 samples). The model seems to learn but the performance is not good. Reason seems to be mis alignment in pretraining objective and the current training dataset.
+Training accuracy seems to increase but very low impact on validation accuracy.
+
+##### Optimizations
+- Using torch amp
+    - Saw quite an improvement in training speed and convergence.
 
 #### BLIP VQA
 On Abhishek's advice trying VQA with a prompt:
@@ -125,6 +130,7 @@ Could be useful stuff:
 - Another survey paper on Vision-Language Models: https://www.semanticscholar.org/reader/04248a087a834af24bfe001c9fc9ea28dab63c26
 
 ## Possible Directions
+- Can mask only the adjectives in training dataset.
 - A lot of images have a celebrity, identifying the celebrity might help in predicting the masked word.
     - Q: Do they mask only adjectives or proper nouns as well?
 - Video-Language Multi-Modal Models
